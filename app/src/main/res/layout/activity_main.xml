@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_gradient"
+    tools:context="com.example.athreyaanand.insider.MainActivity">
+
+
+    <Button
+        android:id="@+id/toLogin"
+        style="@style/InsiderButton.Green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text=" Login "
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/toLobby"
+        style="@style/InsiderButton.Gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text=" Lobby "
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/toTabbed"
+        style="@style/InsiderButton.Yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toLobby"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text=" Tabbed "
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/InsiderButton.Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toTabbed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text=" Coming Soon! "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="126dp"
+        android:text="I N S I D E R"
+        android:textColor="@color/white_50_alpha"
+        android:textSize="48sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="login_btn_fb">Login with Facebook</string>
+    <string name="login_btn_google">Login with Google</string>
+    <string name="action_back">Back</string>
+    <string name="login_btn">Login</string>
+    <string name="register_btn">Register</string>
+    <string name="username">Username</string>
+    <string name="email_username">Email or Username</string>
+    <string name="password">Password</string>
+    <string name="emailAddress">Email address</string>
+    <string name="confirmpassword">Confirm password</string>
+    <string name="forgot_pw_btn">Forgot Password</string>
+    <string name="forgot_pw_tv">Forgot Password? Click here.</string>
+
+    <string name="network_error_title">Connection Error</string>
+    <string name="network_error_no_network_body">You are not connected to the internet.</string>
+    <string name="internal_error_api">There seems to be a problem with the server. Try again later.</string>
+
+    <string name="authentication_error_title">Authentication Error</string>
+    <string name="authentication_error_body">Your Username and/or Password was incorrect.</string>
+
+    <string name="login_validation_error_title">Validation Error</string>
+    <string name="login_validation_error_fieldsmissing">You have to fill out all fields.</string>
+    <string name="title_activity_lobby">LobbyActivity</string>
+
+</resources>
