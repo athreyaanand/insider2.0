@@ -21,9 +21,9 @@ public class TabbedActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private int[] tabIcons = {
             R.drawable.ic_home,
-            R.drawable.ic_settings,
             R.drawable.ic_shop,
-            R.drawable.ic_info
+            R.drawable.ic_info,
+            R.drawable.ic_settings
     };
 
     @Override
@@ -50,7 +50,7 @@ public class TabbedActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new OneFragment(), "ONE");
-        adapter.addFrag(new OneFragment(), "TWO");
+        adapter.addFrag(new TwoFragment(), "TWO");
         adapter.addFrag(new OneFragment(), "THREE");
         adapter.addFrag(new OneFragment(), "FOUR");
         viewPager.setAdapter(adapter);
