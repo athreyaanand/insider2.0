@@ -49,21 +49,22 @@ public class StoreAdapter extends BaseAdapter{
     public View getView(final int position, View convertView, ViewGroup parent) {
         Holder holder=new Holder();
         View rowView;
-        rowView = inflater.inflate(R.layout.list_store, null);
-        holder.title = (TextView) rowView.findViewById(R.id.itemName);
-        holder.description = rowView.findViewById(R.id.itemDesc);
-        holder.img = (ImageView) rowView.findViewById(R.id.itemImage);
+        if (position==0){
+            rowView = inflater.inflate(R.layout.list_noads, null);
+            rowView.setOnClickListener(v -> Toast.makeText(context, "NO ADS!", Toast.LENGTH_LONG).show());
+            return rowView;
+        }else {
+            rowView = inflater.inflate(R.layout.list_store, null);
+            holder.title = (TextView) rowView.findViewById(R.id.itemName);
+            holder.description = rowView.findViewById(R.id.itemDesc);
+            holder.img = (ImageView) rowView.findViewById(R.id.itemImage);
 
-        holder.title.setText(itemList[position].getItemName());
-        holder.description.setText(itemList[position].getItemDesc());
-        holder.img.setImageResource(itemList[position].getItemImage());
-        rowView.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, "You Clicked "+itemList[position].getItemName(), Toast.LENGTH_LONG).show();
-            }
-        });
-        return rowView;
+            holder.title.setText(itemList[position].getItemName());
+            holder.description.setText(itemList[position].getItemDesc());
+            holder.img.setImageResource(itemList[position].getItemImage());
+            rowView.setOnClickListener(v -> Toast.makeText(context, "You Clicked " + itemList[position].getItemName(), Toast.LENGTH_LONG).show());
+            return rowView;
+        }
     }
 
 }

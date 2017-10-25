@@ -1,5 +1,8 @@
 package com.example.athreyaanand.insider;
 
+import android.content.Context;
+import android.media.MediaPlayer;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 

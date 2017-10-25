@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:minHeight="100dp">
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_gravity="center_vertical"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/itemImage"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@+id/itemImage"
+        android:layout_toRightOf="@+id/itemImage"
+        android:text="Deck Name"
+        android:textColor="@color/days_black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/itemDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/itemName"
+        android:layout_alignStart="@+id/itemName"
+        android:layout_below="@+id/itemName"
+        android:text="This is a test description wodfjenfienfinerfuneunfieunfouo woo woo woo ya words! i love words man lets keep going bu"
+        android:layout_marginRight="16dp"
+        android:textSize="10dp"
+        android:lines="2"
+        android:ellipsize="end"/>
+
+    <Button
+        android:id="@+id/joinLobby"
+        style="@style/InsiderButton.Yellow"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/itemImage"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/joinLobby"
+        android:layout_alignLeft="@+id/joinLobby"
+        android:layout_alignRight="@+id/itemDesc"
+        android:layout_alignStart="@+id/joinLobby"
+        android:layout_alignTop="@+id/joinLobby"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="99¢"
+        android:textAlignment="center"
+        android:textSize="12dp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
