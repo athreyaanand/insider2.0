@@ -35,11 +35,10 @@
         android:layout_alignLeft="@+id/itemName"
         android:layout_alignStart="@+id/itemName"
         android:layout_below="@+id/itemName"
-        android:text="This is a test description wodfjenfienfinerfuneunfieunfouo woo woo woo ya words! i love words man lets keep going bu"
-        android:layout_marginRight="16dp"
-        android:textSize="10dp"
+        android:ellipsize="end"
         android:lines="2"
-        android:ellipsize="end"/>
+        android:text="This is a test description wodfjenfienfinerfuneunfieunfouo woo woo woo ya words! i love words man lets keep going buefverfrfz"
+        android:textSize="10dp" />
 
     <Button
         android:id="@+id/joinLobby"
